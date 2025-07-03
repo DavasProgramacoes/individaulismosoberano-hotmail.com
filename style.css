@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--cor-fundo);
+    background-image: url("v1-ultrakill.jpg");
     color: var(--cor-texto);
     display: flex;
     justify-content: center;

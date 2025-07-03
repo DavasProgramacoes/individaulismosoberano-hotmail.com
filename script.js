@@ -6,28 +6,28 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Assim que começa a jogar ULTRAKILL você já consegue o Revolver, no qual é o tiro padrão, e enquato joga você desbloqueia suas variantes. Após conseguir a Marksman, você tem anseio de pegar mais armas?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "É OBVIO!!!",
+                afirmacao: "Desde do começo, você tem um grande anseio por mais e mais."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Por mim já é o suficiente.",
+                afirmacao: "Você provavelmente é um jogador casual, ou apenas prefere armas simples."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Após o início, você descobre alguns segredos no jogo, como Soul Orbs escondidos ou challenges. Quando nota que tem 5 segredos por fase e um desafio, você tenta pegar todos e fazer o desafio?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Não me importo com as coisas escondidas ou os challenges, apenas quero tiroteio frenétio!",
+                afirmacao: "Provavelmente gosta de FPS em sua essência, ou gosta de exibir sua mira pros outros."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Eu vou tentar pegar tudo, ir atrás de qualquer coisa que o jogo pode me oferecer.",
+                afirmacao: "Alguém atencioso e que merece muito respeito, extraindo ao maximo o que esse lindo jogo pode oferecer."
             }
         ]
     },

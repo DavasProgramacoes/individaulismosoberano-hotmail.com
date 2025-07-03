@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--cor-fundo);
+    background-image: url(fastovo.png);
     color: var(--cor-texto);
     display: flex;
     justify-content: center;

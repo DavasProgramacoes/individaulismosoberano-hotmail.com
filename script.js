@@ -19,7 +19,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "então você diz:",
+        enunciado: "então você diz",
         alternativas: [
             {
                 texto: "como você está belo hoje",
@@ -101,7 +101,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "quem era o seu antigo amor?",
-                afirmacao: "mas mesmo assim você questiona que era o antigo amor da vida de Fausto,"
+                afirmacao: "mas mesmo assim você questiona quem era o antigo amor da vida de Fausto,"
             },
             {
                 texto: "",
@@ -114,7 +114,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Ele não te merecia, você é melhor que isso",
-                afirmacao: "e então descobre que o antigo amor da vida de Fausto era Galvão Bueno e de sua traição com Willian Bonner e diz a Fausto que ele não merecia tanto sofrimento,"
+                afirmacao: "e então você descobre que quem era o antigo amor da vida de Fausto era Galvão Bueno, e de sua traição com Willian Bonner, e diz a Fausto que ele não merecia tanto sofrimento,"
             },
             {
                 texto: "",

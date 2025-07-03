@@ -71,7 +71,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "enquanto passeavam ele diz: 'parece que você tá pegando fogo bixo'",
+        enunciado: "ele o leva ao projac da globo e enquanto passeavam ele diz: 'parece que você tá pegando fogo bixo'",
         alternativas: [
             {
                 texto: "'chama bombeiro lá'que tô pegando fogo ",
@@ -97,7 +97,7 @@ const perguntas = [
         ]
     },
       {
-        enunciado: "ele é meio possessivo mas você deve conhce-lo a esse ponto...",
+        enunciado: "ele é meio possessivo mas você deve conhece-lo a esse ponto...",
         alternativas: [
             {
                 texto: "quem era o seu antigo amor?",
@@ -149,11 +149,11 @@ const perguntas = [
         ]
     },
      {
-        enunciado: "",
+        enunciado: "quando chegam ao quarto ele diz'solta essa fera ae meu'",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "Oloko bixo, chama bombeiro lá",
+                afirmacao: "e então vocês ficam finalmente juntos sozinhos pela primeira vez,"
             },
             {
                 texto: "",
@@ -162,15 +162,15 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "",
+        enunciado: "então inesperadamente com uma bicuda na porta do quarto ele....nada mais nada menos que ele....Galvão Bueno invade a privacidade de vocês e disse 'amigos da rede globo o que estou vendo aqui se não é Fausto Silva metendo'Oloko Bixo'!!' ",
         alternativas: [
             {
-                texto: "",
-                afirmacao: ""
+                texto: "cala aboca Galvão",
+                afirmacao: "galvão invade a porta do quarto e pega vocês dois na intimidade e você diz que isso não é da conta dele,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "cala a boca Galvão",
+                afirmacao: "galvão invade a porta do quarto e pega vocês dois na intimidade e você diz que isso não é da conta dele,"
             }
         ]
     },

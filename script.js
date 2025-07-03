@@ -36,7 +36,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Convida ele pro trisal",
-                afirmacao: "Galvão aparece no motel junto com Willan Bonner e pega vocês no flagra, e você convida eles para um menage
+                afirmacao: "Galvão aparece no motel junto com Willan Bonner e pega vocês no flagra, e você convida eles para um menage",
             },
             {
                 texto: "ele nunca saberá",

@@ -1,14 +1,15 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
+    --cor-fundo: #000000 ;
+    --cor-principal: #37130d ;
+    --cor-secundaria: #300e0e; 
+    --cor-destaque: #dc0000;
     --cor-texto: #D7F9FF;
 
 }
 
 body {
     background-color: var(--cor-fundo);
+    background-image: url("v1-ultrakill.jpg");
     color: var(--cor-texto);
     display: flex;
     justify-content: center;

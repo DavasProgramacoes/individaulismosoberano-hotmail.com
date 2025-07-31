@@ -3,18 +3,20 @@ const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-
+let pontos = 0;
 const perguntas = [
     {
         enunciado: "Eu vou...",
         alternativas: [
             {
                 texto: "Dirigir depois de beber",
-                afirmacao: "Eu vou dirigir de pois de beber\p"
+                afirmacao: "Eu vou dirigir de pois de beber ",
+                ponto: 2
             },
             {
                 texto: "Ficar em casa",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                afirmacao: "Quis saber como usar IA no seu dia a dia.",
+                ponto: 1
             }
         ]
     },
@@ -23,11 +25,13 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis.",
+                ponto: 1
             },
             {
                 texto: "Só sabe correr.",
-                afirmacao: "Um veadinho ali, só sabe correr.\p"
+                afirmacao: "Um veadinho ali, só sabe correr.",
+                ponto: 2
             }
         ]
     },
@@ -36,11 +40,13 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Não vou me importar",
-                afirmacao: "Se multar, não vou me importar.\p"
+                afirmacao: "Se multar, não vou me importar.",
+                ponto: 2
             },
             {
                 texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
+                ponto: 1
             }
         ]
     },
@@ -49,11 +55,13 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
+                ponto: 1
             },
             {
                 texto: "aaaaaaaaaaar.",
-                afirmacao: "Vou atropelaraaaaaaaaaaar.\p"
+                afirmacao: "Vou atropelaraaaaaaaaaaar.",
+                ponto: 2
             }
         ]
     },
@@ -62,11 +70,13 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Lotado mermão",
-                afirmacao: "O meu tanque tá lotado mermão."
+                afirmacao: "O meu tanque tá lotado mermão.",
+                ponto: 2
             },
             {
                 texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final.",
+                ponto: 1
             }
         ]
     },
@@ -76,7 +86,6 @@ const perguntas = [
 let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
-
 function mostraPergunta() {
     if (atual >= perguntas.length) {
         mostraResultado();
@@ -98,16 +107,21 @@ function mostraAlternativas(){
 }
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
+    historiaFinal += opcaoSelecionada.afirmacao +"\n";
+    pontos += opcaoSelecionada.ponto || 0; // se não tiver pontuação, soma 0
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Sua historia é: ";
     textoResultado.textContent = historiaFinal;
+    alert(pontos);
     caixaAlternativas.textContent = "";
 }
-
+function videoFinal(){
+    if (ponto == 5){
+        
+    }
+}
 mostraPergunta();

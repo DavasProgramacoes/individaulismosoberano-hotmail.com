@@ -13,8 +13,8 @@ const perguntas = [
                 afirmacao: "Fausto calorosamente diz oi,"
             },
             {
-                texto: "",
-                afirmacao: "" ,
+                texto: "Diz ola gostosura",
+                afirmacao: "fausto cora com sua aproximação gostosa," ,
             }
         ]
     },
@@ -26,8 +26,8 @@ const perguntas = [
                 afirmacao: "ele aceita seu elogio e diz 'muito obrigado Senpai UwU' você também está otimo, "
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "achei horrivel sua blusa",
+                afirmacao: "ele fica triste com essa afirmação e diz 'desculpa ser assim',"
             }
         ]
     },
@@ -39,8 +39,8 @@ const perguntas = [
                 afirmacao: "então ele o convida gentilmente para tomar uma xicara de ovo, ",
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "ovo? odeio ovos, pricipalmente os seus,",
+                afirmacao: "eles está cada vez mais triste,"
             }
         ]
     },
@@ -52,8 +52,8 @@ const perguntas = [
                 afirmacao: "e enquanto conversam, você começa a se sentir diferente, com se estivesse queimando por dentro,"
             },
             {
-                texto: "",
-                afirmacao: "",
+                texto: "quer ajuda para parar seu coração?",
+                afirmacao: "ele se assusta com vc, mas se sente atraído com esse seu instinto pescotapa",
             }
         ]
     },
@@ -65,9 +65,8 @@ const perguntas = [
                 afirmacao: "logo depois Fausto Silva te leva passear no projac da globo, "
             },
             {
-                texto: "",
-                afirmacao: ""
-            }
+                texto: "já?",
+                afirmacao: "logo depois Fausto Silva te leva passear no projac da globo, "            }
         ]
     },
     {
@@ -78,8 +77,8 @@ const perguntas = [
                 afirmacao: "e enquanto passeavam Fausto diz que 'parece que você tá pegando fogo bixo' e fico ainda mais apaixonado pelos seus jargões profundos e sentimentais,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "vem apagar meu fogo fausto...",
+                afirmacao: "e enquanto passeavam fausto fica surpreso mas te puxa para um beijo"
             }
         ]
     },
@@ -91,8 +90,8 @@ const perguntas = [
                 afirmacao: "então você descobre que o Fausto possui um ex mas não dá muita importancia afinal ele é o grande amor da sua vida,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "eu posso matar ele pra vc",
+                afirmacao: "então você descobre que o Fausto possui um ex e dá muita importancia afinal ele é o grande amor da sua vida,e só da sua,"
             }
         ]
     },
@@ -104,8 +103,8 @@ const perguntas = [
                 afirmacao: "mas mesmo assim você questiona quem era o antigo amor da vida de Fausto,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "QUEM?",
+                afirmacao: "mas mesmo assim você questiona quem era o antigo amor da vida de Fausto,"
             }
         ]
     },
@@ -117,8 +116,8 @@ const perguntas = [
                 afirmacao: "e então você descobre que quem era o antigo amor da vida de Fausto era Galvão Bueno, e de sua traição com Willian Bonner, e diz a Fausto que ele não merecia tanto sofrimento,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "ele merece morrer",
+                afirmacao: "e então você descobre que quem era o antigo amor da vida de Fausto era Galvão Bueno, e de sua traição com Willian Bonner, e diz a Fausto que ele não merecia tanto sofrimento,"
             }
         ]
     },
@@ -130,8 +129,8 @@ const perguntas = [
                 afirmacao: "Fausto aceita seu apoio e o convida para passar a noite em um lugar especial,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "PRECISO",
+                afirmacao: "Fausto aceita seu apoio e o convida para passar a noite em um lugar especial,"
             }
         ]
     },
@@ -143,8 +142,8 @@ const perguntas = [
                 afirmacao: "ao chegar ao local você descobre ser um dos melhores e mais caros moteis da cidade,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "que chique fausto, belo gosto",
+                afirmacao: "ao chegar ao local você descobre ser um dos melhores e mais caros moteis da cidade,"
             }
         ]
     },
@@ -156,8 +155,8 @@ const perguntas = [
                 afirmacao: "e então vocês ficam finalmente juntos sozinhos pela primeira vez,"
             },
             {
-                texto: "",
-                afirmacao: ""
+                texto: "acho que não estou preparado",
+                afirmacao: "e então vc recua mas entes que vc possa sair,"
             }
         ]
     },
@@ -171,32 +170,6 @@ const perguntas = [
             {
                 texto: "cala a boca Galvão",
                 afirmacao: "galvão invade a porta do quarto e pega vocês dois na intimidade e você diz que isso não é da conta dele,"
-            }
-        ]
-    },
-    {
-        enunciado: "",
-        alternativas: [
-            {
-                texto: "",
-                afirmacao: ""
-            },
-            {
-                texto: "",
-                afirmacao: ""
-            }
-        ]
-    },
-    {
-        enunciado: "",
-        alternativas: [
-            {
-                texto: "",
-                afirmacao: ""
-            },
-            {
-                texto: "",
-                afirmacao: ""
             }
         ]
     },
@@ -241,3 +214,4 @@ function mostraResultado() {
 }
 
 mostraPergunta();
+

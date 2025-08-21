@@ -14,8 +14,8 @@ const perguntas = [
                 ponto: 2
             },
             {
-                texto: "Ficar em casa",
-                afirmacao: "Quis saber como usar IA no seu dia a dia.",
+                texto: "When the light is running low",
+                afirmacao: "When the light is running low",
                 ponto: 1
             }
         ]
@@ -24,8 +24,8 @@ const perguntas = [
         enunciado: "Um viadinho ali...",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis.",
+                texto: "And the shadows start to grow",
+                afirmacao: "And the shadows start to grow",
                 ponto: 1
             },
             {
@@ -44,8 +44,8 @@ const perguntas = [
                 ponto: 2
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
+                texto: "And the places that you know",
+                afirmacao: "And the places that you know",
                 ponto: 1
             }
         ]
@@ -54,8 +54,8 @@ const perguntas = [
         enunciado: "Vou atropela...",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
+                texto: "Seem like fantasy",
+                afirmacao: "Seem like fantasy",
                 ponto: 1
             },
             {
@@ -74,8 +74,8 @@ const perguntas = [
                 ponto: 2
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final.",
+                texto: "There's a light inside your soul",
+                afirmacao: "There's a light inside your soul",
                 ponto: 1
             }
         ]
@@ -111,7 +111,6 @@ function respostaSelecionada(opcaoSelecionada) {
     pontos += opcaoSelecionada.ponto || 0; // se não tiver pontuação, soma 0
     atual++;
     mostraPergunta();
-    videoFinal();
 }
 
 function mostraResultado() {
@@ -121,7 +120,7 @@ function mostraResultado() {
     videoFinal();
 }
 function videoFinal(){
-    if (pontos == 10){
+    if(pontos == 10){
         limpaCorpo();
         document.body.innerHTML = `  
         <video autoplay muted loop
@@ -134,10 +133,40 @@ function videoFinal(){
         object-fit: cover;
         z-index: 9999;
         border: none;">
-    <source src="videoplayback.mp4" type="video/mp4">
+    <source src="videoplayback.mp4" type="video/mp4"></video>`;}
+
+    if(pontos == 5){
+        limpaCorpo();
+        document.body.innerHTML = `  
+        <video autoplay muted loop
+        style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 9999;
+        border: none;">
+    <source src="videoplayback (1).mp4" type="video/mp4">
   </video>
-`;
-    }
+`;}
+    if (pontos != 10 && pontos != 5){
+        limpaCorpo();
+        document.body.innerHTML = `  
+        <video autoplay muted loop
+        style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 9999;
+        border: none;">
+    <source src="videoplayback (2).mp4" type="video/mp4">
+  </video>
+`;}
 }
 function limpaCorpo(){
     document.body.style.margin = '0';
@@ -146,14 +175,5 @@ function limpaCorpo(){
     document.body.style.overflow = 'hidden';
     document.body.style.backgroundColor = 'black';
 }
-function copoDe5cm(){
-    document.body.style.position = 'fixed';
-    document.body.style.top = '0';
-    document.body.style.left = '0';
-    document.body.style.width = '100vw';
-    document.body.style.height = '100vh';
-    document.body.style.objectFit = 'cover';
-    document.body.style.zIndex = '9999';
-    document.body.style.border = 'none';
-}
+
 mostraPergunta();

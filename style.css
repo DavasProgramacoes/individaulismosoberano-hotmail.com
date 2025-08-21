@@ -1,6 +1,6 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
+    --cor-fundo: #ba39ea ;
+    --cor-principal: #df0d0d ;
     --cor-secundaria: #212333; 
     --cor-destaque: #2BDEFD;
     --cor-texto: #D7F9FF;
@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--cor-fundo);
+    background-image: url(fastovo.png) ;
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
@@ -40,4 +41,5 @@ button {
 button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
+
 }

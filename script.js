@@ -111,17 +111,49 @@ function respostaSelecionada(opcaoSelecionada) {
     pontos += opcaoSelecionada.ponto || 0; // se não tiver pontuação, soma 0
     atual++;
     mostraPergunta();
+    videoFinal();
 }
 
 function mostraResultado() {
     caixaPerguntas.textContent = "Sua historia é: ";
     textoResultado.textContent = historiaFinal;
-    alert(pontos);
     caixaAlternativas.textContent = "";
+    videoFinal();
 }
 function videoFinal(){
-    if (ponto == 5){
-        
+    if (pontos == 10){
+        limpaCorpo();
+        document.body.innerHTML = `  
+        <video autoplay muted loop
+        style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: 9999;
+        border: none;">
+    <source src="videoplayback.mp4" type="video/mp4">
+  </video>
+`;
     }
+}
+function limpaCorpo(){
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
+    document.body.style.height = '100vh';
+    document.body.style.overflow = 'hidden';
+    document.body.style.backgroundColor = 'black';
+}
+function copoDe5cm(){
+    document.body.style.position = 'fixed';
+    document.body.style.top = '0';
+    document.body.style.left = '0';
+    document.body.style.width = '100vw';
+    document.body.style.height = '100vh';
+    document.body.style.objectFit = 'cover';
+    document.body.style.zIndex = '9999';
+    document.body.style.border = 'none';
 }
 mostraPergunta();
